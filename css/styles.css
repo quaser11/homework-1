@@ -1,0 +1,311 @@
+/*  Цвет заголовков #2E2F42 */
+/* Основной цвет текста #434455 */
+/* акцент #434455 */
+/* цвет фона заголовка и футера #434455  */
+/* цвет фона секции #F4F4FD */
+
+*,
+::after,
+::before{
+    box-sizing:border-box;
+}
+:root{
+    --primary-text-color:#434455;
+    --title-text-color:#2E2F42;
+    --primary-white-color:#ffffff;
+    --accent-color:#4D5AE5;
+    --light-color:#F4F4FD;
+}
+
+body{
+    margin:0;
+
+    background-color: var(--primary-white-color);
+    color: var(--primary-text-color);
+    font-family: 'Roboto', sans-serif;
+
+    font-weight: 400;
+    line-height:1.5;
+}
+
+p{
+    margin-top:0;
+    margin-bottom:0;
+}
+
+/* Логотип */
+.logo{
+    color: var(--title-text-color);
+    text-transform:uppercase;
+    font-family:'Raleway', sans-serif;
+    text-decoration:none;
+
+}
+
+.logo-web{
+    color:var(--accent-color);
+}
+
+/* Навигационные ссылки */
+.nav-links{
+    display:flex;
+    margin-right:331px;
+
+    list-style:none;
+    font-weight:600;
+}
+
+.container{
+    width:1152px;
+    padding-left:12px;
+    padding-right:12px;
+    margin:0 auto;
+}
+
+.section{
+    padding-top:120px;
+    padding-bottom:120px;
+}
+.nav-container{
+    display:flex;
+    align-items:center;
+}
+
+.nav-items{
+    display:flex;
+    align-items:center;
+}
+
+
+
+.nav-links .link{
+    display:block;
+    padding-top:24px;
+    padding-bottom:24px;
+
+    text-decoration:none;
+    color:var(--title-text-color);
+
+    font-weight:600;
+}
+
+.nav-links .item:not(:last-child){
+    margin-right:40px;
+}
+
+.nav-links .link:hover,
+.nav-links .link:focus,
+.nav-links .link:active{
+    color:var(--accent-color);
+}
+/* Списки */
+.list{
+    margin-top:0;
+    margin-bottom:0;
+    list-style:none;
+}
+
+.head-address{
+    display:flex;
+    align-items:center;
+    margin:auto;
+    padding:0;
+}
+
+.head-address .link{
+    text-decoration:none;
+    color:var(--title-text-color);
+}
+
+.head-address .item:not(:last-child){
+    margin-right:40px;
+}
+/* Секция герой */
+.hero{
+    height:603px;
+    padding:192px 474px 291px 474px;
+    text-align:center;
+    background-color:var(--title-text-color);
+}
+
+.hero-title{
+    margin-top:0;
+    margin-bottom:50px;
+
+    color: var(--primary-white-color);
+
+    font-size:56px;
+    font-weight:600;
+    font-size:56px;
+    line-height: 1.07;
+}
+
+.button-title{
+    padding:16px 32px;
+    border-radius: 4px;
+    text-align:center;
+    min-width:170px;
+
+    background-color:var(--accent-color);
+    border:none;
+    cursor: pointer;
+    font-family: inherit;
+    color:var(--primary-white-color);
+
+    font-weight:600; 
+    font-size: 16px;
+    line-height: 1.2;
+    
+}
+
+.button-title:active{
+    background-color:var(--accent-color);
+}
+
+/* Все секции в уникальном контенте первой страницы */
+
+
+.section-title{
+    margin-top:0;
+    margin-bottom:70px;
+    color:var(--title-text-color);
+    text-align:center;
+
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.1;
+}
+
+.visually-hidden{
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+
+
+.advantages-list{
+    display:flex;
+    margin-top:0;
+    margin-bottom:0;
+    padding:0;
+    justify-content:center;
+    align-items:center;
+    height:264px;
+
+    
+}
+
+
+.advantages-list .item:not(:last-child){
+    margin-right:24px;
+}
+
+.advantage-title{
+    margin-top:0;
+    margin-bottom:0;
+} 
+
+.possibilities-list{
+    display:flex;
+    padding:0;
+    justify-content:center;
+   
+}
+
+.possibilities-list .item:not(:last-child){
+    margin-right:24px;
+}
+/* Команда инфо */
+.team-info{
+    background-color:var(--light-color);
+
+    margin-top:0;
+    margin-bottom:0;
+
+}
+
+.team-names{
+    color:var(--title-text-color);
+
+    font-weight:600;
+}
+
+.team-list{
+    display:flex;
+    margin-top:0;
+    margin-bottom:0;
+    padding:0;
+}
+
+.team-list .item{
+   text-align:center;
+}
+.team-list .item:not(:last-child){
+    margin-right:24px;
+}
+/* Подвал */
+
+.basement{
+    padding-top:100px;
+    padding-left:155px;
+    padding-bottom:100px;
+    height:310px;
+    background-color:var(--title-text-color);
+}
+
+.fot-item{
+    width:265px;
+}
+
+.basement-text{
+    color:var(--primary-white-color);
+}
+
+.basement-logo{
+    color:var(--primary-white-color);
+    text-transform:uppercase;
+    font-family:'Raleway', sans-serif;
+    text-decoration:none;
+}
+
+/* PORTFOLIO PAGE */
+
+.portfolio-nav-links{
+    text-decoration:none;
+}
+
+.portfolio-nav-buttons{
+    color:var(--accent-color);
+    background-color:var(--light-color);
+    border:none;
+    font-family:inherit;
+
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.portfolio-nav-buttons:hover,
+.portfolio-nav-buttons:focus{
+    color:var(--primary-white-color);
+    background-color:var(--accent-color);
+    cursor: pointer;
+}
+
+
+.cashless-payment{
+    background-color:var(--accent-color);
+    color:var(--light-color);
+
+    width: 360px;
+    height: 300px;
+}
+
